@@ -15,12 +15,12 @@ function Temperatura() {
             <p>{localidad}</p>
         </div>
         <div className='elemento'>
-            <p><b>Temperatura:</b></p>
-            <p><b>{temperatura} °C</b></p>
-        </div>
-        <div className='elemento'>
             <p><b>Hora: </b></p>
             <p>{hora}</p>
+        </div>
+        <div className='elemento'  style={{borderRadius: "10px", backgroundColor: "orange"}}>
+            <p><b>Temperatura:</b></p>
+            <p style={{fontSize: "110%"}}><b>{temperatura} °C</b></p>
         </div>
     </div>
   )
