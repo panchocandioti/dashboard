@@ -1,38 +1,102 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-size: cover;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mitad1 {
+  background-color: rgb(11, 131, 135);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#temp {
+  grid-area: temp;
+  background-color: rgb(183, 248, 195);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#hora {
+  grid-area: hora;
+}
+
+#tiempo {
+  grid-area: tiempo;
+}
+
+#uv {
+  grid-area: uv;
+}
+
+#viento {
+  grid-area: viento;
+}
+
+#sol {
+  grid-area: sol;
+}
+
+#maxmin {
+  grid-area: maxmin;
+}
+
+#presion {
+  grid-area: presion;
+}
+
+#hum {
+  grid-area: hum;
+}
+
+#visi {
+  grid-area: visi;
+}
+
+#aire {
+  grid-area: aire;
+}
+
+.containerTiempo {
+  display: grid;
+  grid-template-areas:
+    'temp maxmin tiempo sol'
+    'hora hum presion viento'
+    'hora uv visi aire';
+  padding: 1.5vh;
+  gap: 1vh;
+}
+
+.seccion,
+.seccionDoble {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.seccion {
+  height: 15vh;
+  background-color: rgb(191, 202, 202);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.seccionDoble {
+  background-color: rgb(239, 246, 191);
+  height: 31vh;
+}
+
+.subseccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: medium;
+}
+
+.elemento {
+  padding-left: 0.7vw;
+  padding-right: 0.7vw;
+}
+
+.mitad2 {
+  background-color: rgb(154, 224, 219);
 }
