@@ -4,29 +4,35 @@ import { Bar } from "react-chartjs-2";
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
-function HoraPorHora() {
+function MaxMin() {
 
     const data = {
-        labels: ["12am", "3am", "6am", "9am", "12pm", "3pm", "6pm", "9pm", "12am"],
+        labels: ["Temp. Máxima (°C)", "Temp. Mínima (°C)"],
         datasets: [{
-            label: "Temperatura (°C)",
-            data: [14, 12, 11, 13, 18, 25, 23, 17, 15],
-            backgroundColor: "orange",
+            label: "",
+            data: [26, 12],
+            backgroundColor: ["red", "blue"],
             borderColor: "black",
-            borderWidth: 2,
+            borderWidth: 2,            
         }]
     }
 
     const options = {
+        indexAxis: 'y',
         responsive: true,
         maintainAspectRatio: false,
+        plugins: {
+            legend: {
+              display: false,
+            },
+          },
     }
 
     return (
-        <div style={{ position: "relative", height: "28vh" }}>
+        <div style={{ position: "relative", height: "15vh"}}>
             <Bar data={data} options={options}></Bar>
         </div>
     )
 }
 
-export default HoraPorHora;
+export default MaxMin
