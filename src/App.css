@@ -95,8 +95,12 @@
 .elemento {
   padding-left: 0.75vw;
   padding-right: 0.75vw;
+  margin: 5px;
+  border-radius: 10px;
 }
 
 .mitad2 {
   background-color: rgb(154, 224, 219);
 }
+
+img {height: 13vh;}

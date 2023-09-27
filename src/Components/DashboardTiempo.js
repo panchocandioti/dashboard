@@ -2,6 +2,8 @@ import React from "react";
 import Temperatura from "./Temperatura"
 import HoraPorHora from "./HoraPorHora";
 import MaxMin from "./MaxMin";
+import TiempoActual from "./TiempoActual";
+import SalidaPuesta from "./SalidaPuesta";
 
 function DashboardTiempo() {
     return (
@@ -12,10 +14,14 @@ function DashboardTiempo() {
             <div className="seccionDoble" id="hora">
                 <HoraPorHora />
             </div>
-            <div className="seccion" id="tiempo">TIEMPO</div>
+            <div className="seccion" id="tiempo">
+                <TiempoActual />
+            </div>
             <div className="seccion" id="uv">UV</div>
             <div className="seccion" id="viento">VIENTO</div>
-            <div className="seccion" id="sol">SALIDA Y PUESTA</div>
+            <div className="seccion" id="sol">
+                <SalidaPuesta />
+            </div>
             <div className="seccion" id="maxmin">
                 <MaxMin />
             </div>
