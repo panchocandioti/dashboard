@@ -15,4 +15,4 @@ function SalidaPuesta() {
   )
 }
 
-export default SalidaPuesta
+export default SalidaPuesta;

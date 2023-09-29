@@ -38,12 +38,12 @@
   grid-area: maxmin;
 }
 
-#presion {
-  grid-area: presion;
+#lluvia {
+  grid-area: lluvia;
 }
 
-#hum {
-  grid-area: hum;
+#humpresion {
+  grid-area: humpresion;
 }
 
 #visi {
@@ -58,7 +58,7 @@
   display: grid;
   grid-template-areas:
     'temp maxmin tiempo sol'
-    'hora hum presion viento'
+    'hora humpresion lluvia viento'
     'hora uv visi aire';
   padding: 1.5vh;
   gap: 1vh;
