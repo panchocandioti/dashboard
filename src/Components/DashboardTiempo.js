@@ -5,6 +5,8 @@ import MaxMin from "./MaxMin";
 import TiempoActual from "./TiempoActual";
 import SalidaPuesta from "./SalidaPuesta";
 import HumedadPresion from "./HumedadPresion";
+import Lluvia from "./Lluvia";
+import Viento from "./Viento"
 
 function DashboardTiempo() {
     return (
@@ -19,7 +21,9 @@ function DashboardTiempo() {
                 <TiempoActual />
             </div>
             <div className="seccion" id="uv">UV</div>
-            <div className="seccion" id="viento">VIENTO</div>
+            <div className="seccion" id="viento">
+                <Viento />
+            </div>
             <div className="seccion" id="sol">
                 <SalidaPuesta />
             </div>
@@ -29,7 +33,9 @@ function DashboardTiempo() {
             <div className="seccion" id="humpresion">
                 <HumedadPresion />
             </div>
-            <div className="seccion" id="lluvia">LLUVIA</div>
+            <div className="seccion" id="lluvia">
+                <Lluvia />
+            </div>
             <div className="seccion" id="visi">VISIBILIDAD</div>
             <div className="seccion" id="aire">CALIDAD AIRE</div>
         </div>
