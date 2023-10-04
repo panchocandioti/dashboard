@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/dashboard/static/css/main.b077cf44.css",
-    "main.js": "/dashboard/static/js/main.fa4a6b34.js",
+    "main.js": "/dashboard/static/js/main.2da98e8b.js",
     "static/js/787.545aecf5.chunk.js": "/dashboard/static/js/787.545aecf5.chunk.js",
     "static/media/vientoNoche.jpg": "/dashboard/static/media/vientoNoche.501b41330fff675f3097.jpg",
     "static/media/vientoDia.jpg": "/dashboard/static/media/vientoDia.bb26efe5e0a7dd76885d.jpg",
     "static/media/despejadoDia.jpg": "/dashboard/static/media/despejadoDia.15cf79d88086623ad0ac.jpg",
     "static/media/despejadoNoche.jpg": "/dashboard/static/media/despejadoNoche.c1da0ab4a98143059629.jpg",
+    "static/media/crepusculo.jpg": "/dashboard/static/media/crepusculo.4c4181a9ade1bd0ffd68.jpg",
     "index.html": "/dashboard/index.html",
     "main.b077cf44.css.map": "/dashboard/static/css/main.b077cf44.css.map",
-    "main.fa4a6b34.js.map": "/dashboard/static/js/main.fa4a6b34.js.map",
+    "main.2da98e8b.js.map": "/dashboard/static/js/main.2da98e8b.js.map",
     "787.545aecf5.chunk.js.map": "/dashboard/static/js/787.545aecf5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b077cf44.css",
-    "static/js/main.fa4a6b34.js"
+    "static/js/main.2da98e8b.js"
   ]
 }
