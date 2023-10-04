@@ -7,6 +7,9 @@ import SalidaPuesta from "./SalidaPuesta";
 import HumedadPresion from "./HumedadPresion";
 import Lluvia from "./Lluvia";
 import Viento from "./Viento"
+import CalidadAire from "./CalidadAire";
+import Visibilidad from "./Visibilidad";
+import UVIndex from "./UVIndex";
 
 function DashboardTiempo() {
     return (
@@ -20,7 +23,9 @@ function DashboardTiempo() {
             <div className="seccion" id="tiempo">
                 <TiempoActual />
             </div>
-            <div className="seccion" id="uv">UV</div>
+            <div className="seccion" id="uv">
+                <UVIndex />
+            </div>
             <div className="seccion" id="viento">
                 <Viento />
             </div>
@@ -36,8 +41,12 @@ function DashboardTiempo() {
             <div className="seccion" id="lluvia">
                 <Lluvia />
             </div>
-            <div className="seccion" id="visi">VISIBILIDAD</div>
-            <div className="seccion" id="aire">CALIDAD AIRE</div>
+            <div className="seccion" id="visi">
+                <Visibilidad />
+            </div>
+            <div className="seccion" id="aire">
+                <CalidadAire />
+            </div>
         </div>
     );
 };

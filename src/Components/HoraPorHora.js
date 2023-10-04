@@ -10,7 +10,7 @@ function HoraPorHora() {
     const data = {
         labels: ["12am", "3am", "6am", "9am", "12pm", "3pm", "6pm", "9pm", "12am"],
         datasets: [{
-            label: "Temperatura (°C)",
+            label: "Temperatura por hora (°C)",
             data: [14, 12, 11, 13, 18, 25, 23, 17, 15],
             backgroundColor: "orange",
             borderColor: "black",
