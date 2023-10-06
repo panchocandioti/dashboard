@@ -1,10 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
+import { datosTrabajo1 } from './Datos';
 
 function Temperatura() {
 
-    const [temperatura, setTemperatura] = useState(25);
-    const [localidad, setLocalidad] = useState("CÓRDOBA");
-    const [hora, setHora] = useState("17:00")
+    const temperatura = datosTrabajo1["current_weather"]["temperature"];
+    const localidad = "CANDIOTI";
+    const hora = datosTrabajo1["current_weather"]["time"].split("T")[1];
 
 
 

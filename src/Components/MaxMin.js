@@ -1,6 +1,7 @@
 import React from 'react'
 import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, Tooltip, Legend } from "chart.js";
 import { Bar } from "react-chartjs-2";
+import { datosTrabajo1 } from './Datos';
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
@@ -10,7 +11,7 @@ function MaxMin() {
         labels: ["Temp. Máxima (°C)", "Temp. Mínima (°C)"],
         datasets: [{
             label: "",
-            data: [26, 12],
+            data: [datosTrabajo1["daily"]["temperature_2m_max"][0], datosTrabajo1["daily"]["temperature_2m_min"][0]],
             backgroundColor: ["red", "blue"],
             borderColor: "black",
             borderWidth: 2,            
