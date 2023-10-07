@@ -1,10 +1,11 @@
 import React from 'react'
 import { datosTrabajo1 } from './Datos';
 
-const precipitacion = datosTrabajo1["daily"]["precipitation_sum"];
-const probabilidad = datosTrabajo1["daily"]["precipitation_probability_max"];
-
 function Lluvia() {
+
+  const precipitacion = datosTrabajo1["daily"]["precipitation_sum"];
+  const probabilidad = datosTrabajo1["daily"]["precipitation_probability_max"];
+
   return (
     <div className='subseccion'>
         <div className='elemento' style={{backgroundColor: "lightblue"}}>

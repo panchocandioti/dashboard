@@ -2,10 +2,12 @@ import React from 'react'
 import crepusculo from "../multimedia/crepusculo.jpg"
 import { datosTrabajo1 } from './Datos';
 
-const horaSalida = datosTrabajo1["daily"]["sunrise"][0].split("T")[1];
-const horaPuesta = datosTrabajo1["daily"]["sunset"][0].split("T")[1];
 
 function SalidaPuesta() {
+
+  const horaSalida = datosTrabajo1["daily"]["sunrise"][0].split("T")[1];
+  const horaPuesta = datosTrabajo1["daily"]["sunset"][0].split("T")[1];
+
   return (
     <div className='subseccion'>
         <img src={crepusculo}></img>

@@ -7,8 +7,6 @@ function Temperatura() {
     const localidad = "CANDIOTI";
     const hora = datosTrabajo1["current_weather"]["time"].split("T")[1];
 
-
-
   return (
     <div className='subseccion'>
         <div className='elemento'>
