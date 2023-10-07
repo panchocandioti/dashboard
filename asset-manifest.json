@@ -1,20 +1,28 @@
 {
   "files": {
     "main.css": "/dashboard/static/css/main.b077cf44.css",
-    "main.js": "/dashboard/static/js/main.29ecd7ae.js",
+    "main.js": "/dashboard/static/js/main.d2f6af86.js",
     "static/js/787.545aecf5.chunk.js": "/dashboard/static/js/787.545aecf5.chunk.js",
+    "static/media/nieveNoche.jpg": "/dashboard/static/media/nieveNoche.016b8f69562b11eb2e2e.jpg",
+    "static/media/lluviaNoche.jpg": "/dashboard/static/media/lluviaNoche.badc67b0cfdb178e0434.jpg",
+    "static/media/lluviaDia.jpg": "/dashboard/static/media/lluviaDia.532fc8b6e7d3149637ca.jpg",
     "static/media/vientoNoche.jpg": "/dashboard/static/media/vientoNoche.501b41330fff675f3097.jpg",
+    "static/media/nieveDia.jpg": "/dashboard/static/media/nieveDia.23b171391e6cd026744f.jpg",
     "static/media/vientoDia.jpg": "/dashboard/static/media/vientoDia.bb26efe5e0a7dd76885d.jpg",
     "static/media/despejadoDia.jpg": "/dashboard/static/media/despejadoDia.15cf79d88086623ad0ac.jpg",
+    "static/media/nubladoParcialNoche.jpg": "/dashboard/static/media/nubladoParcialNoche.ce2b95da01d348802e45.jpg",
+    "static/media/nubladoDia.jpg": "/dashboard/static/media/nubladoDia.cc51e27b7c9fda77e7c8.jpg",
+    "static/media/nubladoNoche.jpg": "/dashboard/static/media/nubladoNoche.d63554ed56b609cd8892.jpg",
+    "static/media/nubladoParcialDia.jpg": "/dashboard/static/media/nubladoParcialDia.ca4494896545657579b3.jpg",
     "static/media/despejadoNoche.jpg": "/dashboard/static/media/despejadoNoche.c1da0ab4a98143059629.jpg",
     "static/media/crepusculo.jpg": "/dashboard/static/media/crepusculo.4c4181a9ade1bd0ffd68.jpg",
     "index.html": "/dashboard/index.html",
     "main.b077cf44.css.map": "/dashboard/static/css/main.b077cf44.css.map",
-    "main.29ecd7ae.js.map": "/dashboard/static/js/main.29ecd7ae.js.map",
+    "main.d2f6af86.js.map": "/dashboard/static/js/main.d2f6af86.js.map",
     "787.545aecf5.chunk.js.map": "/dashboard/static/js/787.545aecf5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b077cf44.css",
-    "static/js/main.29ecd7ae.js"
+    "static/js/main.d2f6af86.js"
   ]
 }
