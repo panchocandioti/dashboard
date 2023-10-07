@@ -107,7 +107,11 @@
   background-color: rgb(154, 224, 219);
 }
 
-img {height: 13.5vh;}
+img {
+  height: 13.5vh;
+  margin: 5px;
+  border-radius: 10px;
+}
 
 .elemento p {
   line-height: 1.5;
