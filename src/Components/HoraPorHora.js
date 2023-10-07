@@ -8,10 +8,10 @@ ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 function HoraPorHora() {
 
     const data = {
-        labels: ["12am", "3am", "6am", "9am", "12pm", "3pm", "6pm", "9pm", "12am"],
+        labels: ["0:00", "1:00", "2:00", "3:00", "4:00", "5:00", "6:00", "7:00", "8:00", "9:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00","22:00", "23:00"],
         datasets: [{
             label: "Temperatura por hora (°C)",
-            data: [14, 12, 11, 13, 18, 25, 23, 17, 15],
+            data: datosTrabajo1["hourly"]["temperature_2m"],
             backgroundColor: "orange",
             borderColor: "black",
             borderWidth: 2,

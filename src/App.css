@@ -11,7 +11,6 @@
 
 #temp {
   grid-area: temp;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #hora {
@@ -68,9 +67,10 @@
 .seccionDoble {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
+  width: 100%;
 }
 
 .seccion {
@@ -86,21 +86,30 @@
 .subseccion {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: medium;
+  height: 15vh;
 }
 
 .elemento {
-  padding-left: 0.75vw;
-  padding-right: 0.75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  padding-left: 5px;
+  padding-right: 5px;
   margin: 5px;
   border-radius: 10px;
+  height: 13.5vh;
 }
 
 .mitad2 {
   background-color: rgb(154, 224, 219);
 }
 
-img {height: 13vh;}
+img {height: 13.5vh;}
+
+.elemento p {
+  line-height: 1.5;
+  margin: 0;
+}
