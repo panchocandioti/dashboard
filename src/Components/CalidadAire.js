@@ -36,7 +36,7 @@ function CalidadAire() {
             <img src={emojiMascara}></img>
             <div className='elemento'>
                 <p><b>Calidad del aire</b></p>
-                
+                <p style={{fontSize: "small"}}>(European AQI)</p>
             </div>
             <div className='elemento'style={{color: "darkred", backgroundColor: "lightgray"}}>
                 <p><b>{claseCalidadAire}</b></p>

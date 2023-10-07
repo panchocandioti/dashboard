@@ -16,6 +16,14 @@ function TiempoActual() {
 
     const esDiaNumero = datosTrabajo1["current_weather"]["is_day"];
     const weatherCode = datosTrabajo1["current_weather"]["weathercode"];
+    const time = datosTrabajo1["current_weather"]["time"];
+
+    const hora = time.split("T")[1];
+    const date = time.split("T")[0];
+    const year = date.split("-")[0];
+    const month = date.split("-")[1];
+    const day = date.split("-")[2];
+    const fecha = day + "/" + month + "/" + year;
 
     let tiempoAhora = "";
     let dibujo;
@@ -78,6 +86,10 @@ function TiempoActual() {
 
     return (
         <div className='subseccion'>
+            <div className='elemento' style={{textAlign: "left"}}>
+                <p><b>Fecha: </b>{fecha}</p>
+                <p><b>Hora: </b>{hora}</p>
+            </div>
             {esDiaNumero == 1 && dibujo == 0 && (<img className="elemento" src={despejadoDia}></img>)}
             {esDiaNumero == 0 && dibujo == 0 && (<img className="elemento" src={despejadoNoche}></img>)}
             {esDiaNumero == 1 && dibujo == 1 && (<img className="elemento" src={nubladoParcialDia}></img>)}
