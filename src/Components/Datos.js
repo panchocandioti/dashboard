@@ -20,8 +20,8 @@ const datosApi1 = {
         "temperature": 22.6,
         "windspeed": 12.2,
         "winddirection": 34,
-        "is_day": 0,
-        "weathercode": 66
+        "is_day": 1,
+        "weathercode": 0
     },
     "hourly_units": {
         "time": "iso8601",
