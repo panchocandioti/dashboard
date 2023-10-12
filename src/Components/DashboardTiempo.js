@@ -11,7 +11,6 @@ import CalidadAire from "./CalidadAire";
 import Visibilidad from "./Visibilidad";
 import UVIndex from "./UVIndex";
 
-
 function DashboardTiempo() {
 
     const [weatherData1, setWeatherData1] = useState({});
@@ -44,12 +43,8 @@ function DashboardTiempo() {
             await fetchWeatherData2();
             setCargando(false);
         }
-
         fetchData();
     }, []);
-
-    console.log(weatherData1);
-    console.log(weatherData2)
 
     return (
         <div>
