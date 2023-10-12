@@ -53,7 +53,7 @@ function DashboardTiempo() {
 
     return (
         <div>
-            {cargando === true && (<div>CARGANDO DATOS METEOROLÓGICOS</div>)}
+            {cargando === true && (<div className="texto-con-movimiento">CARGANDO DATOS METEOROLÓGICOS</div>)}
             {cargando === false && (<div className="containerTiempo">
                 <div className="seccion" id="temp">
                     <Temperatura weatherData1={weatherData1} />
