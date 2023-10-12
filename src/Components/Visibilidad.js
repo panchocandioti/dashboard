@@ -1,9 +1,9 @@
 import React from 'react'
 import telescopio from "../multimedia/telescopio.jpg"
-import { datosTrabajo1 } from './Datos';
 
-function Visibilidad() {
+function Visibilidad(props) {
 
+    const datosTrabajo1 = props.weatherData1;
     const hora = datosTrabajo1["current_weather"]["time"];
     const hora1 = hora.split("T")[1];
     const horaPosicion = hora1.split(":")[0];

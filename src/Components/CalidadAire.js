@@ -1,11 +1,10 @@
 import React from 'react'
 import emojiMascara from "../multimedia/emojiMascara.jpg"
-import { datosTrabajo1 } from './Datos'
-import { datosTrabajo2 } from "./Datos2"
 
+function CalidadAire(props) {
 
-function CalidadAire() {
-
+    const datosTrabajo1 = props.weatherData1;
+    const datosTrabajo2 = props.weatherData2;
     const hora = datosTrabajo1["current_weather"]["time"];
     const hora1 = hora.split("T")[1];
     const horaPosicion = hora1.split(":")[0];

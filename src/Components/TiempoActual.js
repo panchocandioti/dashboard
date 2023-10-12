@@ -9,11 +9,11 @@ import lluviaNoche from '../multimedia/IconosClima/noche/lluviaNoche.jpg'
 import nieveNoche from '../multimedia/IconosClima/noche/nieveNoche.jpg'
 import nubladoNoche from '../multimedia/IconosClima/noche/nubladoNoche.jpg'
 import nubladoParcialNoche from '../multimedia/IconosClima/noche/nubladoParcialNoche.jpg'
-import { datosTrabajo1 } from './Datos'
 
 
-function TiempoActual() {
+function TiempoActual(props) {
 
+    const datosTrabajo1 = props.weatherData1;
     const esDiaNumero = datosTrabajo1["current_weather"]["is_day"];
     const weatherCode = datosTrabajo1["current_weather"]["weathercode"];
     const time = datosTrabajo1["current_weather"]["time"];

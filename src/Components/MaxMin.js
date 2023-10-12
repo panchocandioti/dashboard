@@ -1,12 +1,12 @@
 import React from 'react'
 import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, Tooltip, Legend } from "chart.js";
 import { Bar } from "react-chartjs-2";
-import { datosTrabajo1 } from './Datos';
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
-function MaxMin() {
+function MaxMin(props) {
 
+    const datosTrabajo1 = props.weatherData1;
     const data = {
         labels: ["Temp. Máxima (°C)", "Temp. Mínima (°C)"],
         datasets: [{

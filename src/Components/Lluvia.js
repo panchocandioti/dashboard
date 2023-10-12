@@ -1,8 +1,8 @@
 import React from 'react'
-import { datosTrabajo1 } from './Datos';
 
-function Lluvia() {
+function Lluvia(props) {
 
+  const datosTrabajo1 = props.weatherData1;
   const precipitacion = datosTrabajo1["daily"]["precipitation_sum"];
   const probabilidad = datosTrabajo1["daily"]["precipitation_probability_max"];
 

@@ -1,10 +1,10 @@
 import React from 'react'
 import crepusculo from "../multimedia/crepusculo.jpg"
-import { datosTrabajo1 } from './Datos';
 
 
-function SalidaPuesta() {
+function SalidaPuesta(props) {
 
+  const datosTrabajo1 = props.weatherData1;
   const horaSalida = datosTrabajo1["daily"]["sunrise"][0].split("T")[1];
   const horaPuesta = datosTrabajo1["daily"]["sunset"][0].split("T")[1];
 

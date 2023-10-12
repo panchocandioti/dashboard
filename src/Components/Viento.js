@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import vientoDia from "../multimedia/IconosClima/dia/vientoDia.jpg"
 import vientoNoche from "../multimedia/IconosClima/noche/vientoNoche.jpg"
-import { datosTrabajo1 } from './Datos'
 
-function Viento() {
+function Viento(props) {
     
+    const datosTrabajo1 = props.weatherData1;
     const velocidad = datosTrabajo1["current_weather"]["windspeed"];
     const direccionGrados = datosTrabajo1["current_weather"]["winddirection"];
     const esDiaNumero = datosTrabajo1["current_weather"]["is_day"];

@@ -1,8 +1,8 @@
 import React from 'react'
-import { datosTrabajo1 } from './Datos';
 
-function HumedadPresion() {
+function HumedadPresion(props) {
 
+  const datosTrabajo1 = props.weatherData1;
   const hora = datosTrabajo1["current_weather"]["time"];
   const hora1 = hora.split("T")[1];
   const horaPosicion = hora1.split(":")[0];

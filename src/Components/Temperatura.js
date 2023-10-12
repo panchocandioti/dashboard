@@ -1,8 +1,8 @@
 import React from 'react'
-import { datosTrabajo1 } from './Datos';
 
-function Temperatura() {
+function Temperatura(props) {
 
+    const datosTrabajo1 = props.weatherData1;
     const temperatura = datosTrabajo1["current_weather"]["temperature"];
     const localidad = "GOBERNADOR CANDIOTI";
 
