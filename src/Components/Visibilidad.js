@@ -6,7 +6,7 @@ function Visibilidad(props) {
     const datosTrabajo1 = props.weatherData1;
     const hora = datosTrabajo1["current_weather"]["time"];
     const hora1 = hora.split("T")[1];
-    const horaPosicion = hora1.split(":")[0];
+    const horaPosicion = parseInt(hora1.split(":")[0]);
     const visibilidadMetros = datosTrabajo1["hourly"]["visibility"][horaPosicion];
     const visibilidadKm = parseInt(visibilidadMetros/1000);
 

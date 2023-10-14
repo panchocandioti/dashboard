@@ -7,7 +7,7 @@ function CalidadAire(props) {
     const datosTrabajo2 = props.weatherData2;
     const hora = datosTrabajo1["current_weather"]["time"];
     const hora1 = hora.split("T")[1];
-    const horaPosicion = hora1.split(":")[0];
+    const horaPosicion = parseInt(hora1.split(":")[0]);
     const calidadAire = parseInt(datosTrabajo2["hourly"]["european_aqi"][horaPosicion]);
 
     let claseCalidadAire = "";

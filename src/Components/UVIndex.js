@@ -6,13 +6,15 @@ function UVIndex(props) {
     const datosTrabajo1 = props.weatherData1;
     const hora = datosTrabajo1["current_weather"]["time"];
     const hora1 = hora.split("T")[1];
-    const horaPosicion = hora1.split(":")[0];
+    const horaPosicion = parseInt(hora1.split(":")[0]);
     const indiceUV = datosTrabajo1["hourly"]["uv_index"][horaPosicion];
 
     let claseUVIndex = "";
 
     const clasificarUVIndex = () => {
-        if (indiceUV <= 2) {
+        if (indiceUV <= 0) {
+            claseUVIndex = "SIN RIESGO";
+        } else if (indiceUV > 0 && indiceUV <= 2) {
             claseUVIndex = "RIESGO BAJO";
         } else if (indiceUV >2 && indiceUV <= 5) {
             claseUVIndex = "RIESGO MODERADO";

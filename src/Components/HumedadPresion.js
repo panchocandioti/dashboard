@@ -5,7 +5,7 @@ function HumedadPresion(props) {
   const datosTrabajo1 = props.weatherData1;
   const hora = datosTrabajo1["current_weather"]["time"];
   const hora1 = hora.split("T")[1];
-  const horaPosicion = hora1.split(":")[0];
+  const horaPosicion = parseInt(hora1.split(":")[0]);
   const humedad = datosTrabajo1["hourly"]["relativehumidity_2m"][horaPosicion];
   const presion = Math.round(datosTrabajo1["hourly"]["surface_pressure"][horaPosicion]);
 
