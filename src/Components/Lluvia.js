@@ -8,6 +8,10 @@ function Lluvia(props) {
 
   return (
     <div className='subseccion'>
+        <div className='elemento'>
+          <p>Previsión</p>
+          <p>para hoy:</p>
+        </div>
         <div className='elemento' style={{backgroundColor: "lightblue"}}>
             <p><b>Precipitación</b></p>
             <p><b>{precipitacion} mm</b></p>

@@ -35,6 +35,7 @@ function UVIndex(props) {
             <img src={emojiAnteojosNegros}></img>
             <div className='elemento'>
                 <p><b>UV Index</b></p>
+                <p style={{fontSize: "small"}}>(EPA USA)</p>
             </div>
             <div className='elemento' style={{color: "darkred", backgroundColor: "lightgray"}}>
                 <p><b>{claseUVIndex}</b></p>
