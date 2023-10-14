@@ -15,15 +15,15 @@ function UVIndex(props) {
     const clasificarUVIndex = () => {
         if (indiceUV <= 0 || esDiaNumero === 0) {
             claseUVIndex = "SIN RIESGO";
-        } else if (indiceUV > 0 && indiceUV <= 2) {
+        } else if (indiceUV > 0 && indiceUV <= 2 && esDiaNumero === 1) {
             claseUVIndex = "RIESGO BAJO";
-        } else if (indiceUV >2 && indiceUV <= 5) {
+        } else if (indiceUV >2 && indiceUV <= 5 && esDiaNumero === 1) {
             claseUVIndex = "RIESGO MODERADO";
-        } else if (indiceUV > 5 && indiceUV <= 7) {
+        } else if (indiceUV > 5 && indiceUV <= 7 && esDiaNumero === 1) {
             claseUVIndex = "RIESGO ALTO";
-        } else if (indiceUV > 7 && indiceUV <= 10) {
+        } else if (indiceUV > 7 && indiceUV <= 10 && esDiaNumero === 1) {
             claseUVIndex = "RIESGO MUY ALTO";
-        } else if (indiceUV > 10) {
+        } else if (indiceUV > 10 && esDiaNumero === 1) {
             claseUVIndex = "RIESGO EXTREMO";
         }
     }
