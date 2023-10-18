@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dashboard/static/css/main.35980d59.css",
-    "main.js": "/dashboard/static/js/main.405da094.js",
+    "main.css": "/dashboard/static/css/main.593839aa.css",
+    "main.js": "/dashboard/static/js/main.598b119f.js",
     "static/js/787.545aecf5.chunk.js": "/dashboard/static/js/787.545aecf5.chunk.js",
     "static/media/nieveNoche.jpg": "/dashboard/static/media/nieveNoche.016b8f69562b11eb2e2e.jpg",
     "static/media/lluviaNoche.jpg": "/dashboard/static/media/lluviaNoche.badc67b0cfdb178e0434.jpg",
@@ -17,12 +17,12 @@
     "static/media/despejadoNoche.jpg": "/dashboard/static/media/despejadoNoche.c1da0ab4a98143059629.jpg",
     "static/media/crepusculo.jpg": "/dashboard/static/media/crepusculo.4c4181a9ade1bd0ffd68.jpg",
     "index.html": "/dashboard/index.html",
-    "main.35980d59.css.map": "/dashboard/static/css/main.35980d59.css.map",
-    "main.405da094.js.map": "/dashboard/static/js/main.405da094.js.map",
+    "main.593839aa.css.map": "/dashboard/static/css/main.593839aa.css.map",
+    "main.598b119f.js.map": "/dashboard/static/js/main.598b119f.js.map",
     "787.545aecf5.chunk.js.map": "/dashboard/static/js/787.545aecf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35980d59.css",
-    "static/js/main.405da094.js"
+    "static/css/main.593839aa.css",
+    "static/js/main.598b119f.js"
   ]
 }
