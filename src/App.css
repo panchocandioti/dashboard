@@ -140,3 +140,8 @@ img {
 .texto-con-movimiento {
   animation: moverTexto 2s ease-in-out infinite;
 }
+
+.leaflet-container {
+  width: 100wh; 
+  height: 50vh;
+}
