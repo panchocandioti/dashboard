@@ -145,3 +145,15 @@ img {
   width: 100wh; 
   height: 50vh;
 }
+
+#opcionesDropdown {
+  text-align: center;
+}
+
+.barratransporte {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 27px;
+}

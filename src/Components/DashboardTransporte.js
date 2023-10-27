@@ -29,19 +29,30 @@ function DashboardTransporte() {
     };
 
     useEffect(() => {
-        const selectedData = transportData.find(item => item.route_id === linea);
+        let latitudes = transportData.map(item => item.latitude);
+        let longitudes = transportData.map(item => item.longitude);
+        let centerLat = (Math.max(...latitudes) + Math.min(...latitudes)) / 2;
+        let centerLng = (Math.max(...longitudes) + Math.min(...longitudes)) / 2;
+        let selectedData = transportData.find(item => item.route_id === linea);
         if (selectedData) {
-            setCentrado([selectedData.latitude, selectedData.longitude]);
+            setCentrado([centerLat, centerLng]);
         }
-        fetchTransportData()
     }, [linea]);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            fetchTransportData();
-        }, 31000);
+        const fetchTransportData = async () => {
+          try {
+            const response = await fetch(`https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?route_id=${linea}&client_id=cb6b18c84b3b484d98018a791577af52&client_secret=3e3DB105Fbf642Bf88d5eeB8783EE1E6`);
+            const data = await response.json();
+            setTransportData(data);
+          } catch (error) {
+            console.error(error);
+          }
+        };
+        fetchTransportData();
+        const interval = setInterval(fetchTransportData, 31000);
         return () => clearInterval(interval);
-    }, []);
+      }, [linea]);
 
     useEffect(() => {
         async function fetchData() {
@@ -51,23 +62,27 @@ function DashboardTransporte() {
         fetchData();
     }, []);
 
-    console.log("Línea: " + linea);
-
     return (
         <div>
             {cargando === true && (<div className="texto-con-movimiento">CARGANDO DATOS TRANSPORTE</div>)}
             {cargando === false && (<div>
-                <div style={{ backgroundColor: "#ccc", border: "2px solid #000" }}>
-                    <label htmlFor="opcionesDropdown">Selecciona una ruta (route_id): </label>
-                    <select id="opcionesDropdown" value={linea} onChange={handleSelectChange}>
-                        <option value="route_id">Selecciona una opción</option>
-                        {datosDropdown3.map((opcion) => (
-                            <option value={opcion}>
-                                {opcion}
-                            </option>
-                        ))}
-                    </select>
+                <div className="barratransporte" style={{ backgroundColor: "#ccc", border: "2px solid #000" }}>
+                    <h4>COLECTIVOS DE LA CIUDAD AUTÓNOMA DE BUENOS AIRES</h4>
+                    <div>
+                        <label htmlFor="opcionesDropdown">Selecciona una ruta (route_id): </label>
+                        <select id="opcionesDropdown" value={linea} onChange={handleSelectChange}>
+                            <option value="route_id">Selecciona una opción</option>
+                            {datosDropdown3.map((opcion) => (
+                                <option value={opcion}>
+                                    {opcion}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
                 </div>
+
+
+
                 <MapContainer center={centrado} zoom={11} scrollWheelZoom={true}>
                     <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
