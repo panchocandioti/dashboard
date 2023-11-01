@@ -51,6 +51,9 @@ function DashboardTransporte() {
         const fetchTransportData = async () => {
             try {
                 const response = await fetch(`https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?route_id=${linea}&client_id=cb6b18c84b3b484d98018a791577af52&client_secret=3e3DB105Fbf642Bf88d5eeB8783EE1E6`);
+                if (!response.ok) {
+                    throw new Error(`Error de servidor: Código ${response.status}`);
+                  }
                 const data = await response.json();
                 setTransportData(data);
             } catch (error) {
@@ -74,7 +77,7 @@ function DashboardTransporte() {
         const map = useMap();
         useEffect(() => {
             map.setView(centrado);
-        }, [transportData, linea]);
+        }, [linea]);
         return null;
     }
 
