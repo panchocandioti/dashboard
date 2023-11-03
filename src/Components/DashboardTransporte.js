@@ -14,7 +14,7 @@ function DashboardTransporte() {
     const [centerLat, setCenterLat] = useState((Math.max(...latitudes) + Math.min(...latitudes)) / 2);
     const [centerLng, setCenterLng] = useState((Math.max(...longitudes) + Math.min(...longitudes)) / 2);
     const [selectedData, setSelectedData] = useState(transportData.find(item => item.route_id === linea));
-
+    
     const datosDropDown1 = datosTransporte.map(item => item.route_id);
     const datosDropDown2 = datosDropDown1.sort((a, b) => a - b);
     const datosDropdown3 = [...new Set(datosDropDown2)];
@@ -30,7 +30,7 @@ function DashboardTransporte() {
             const response = await fetch(`https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?route_id=${linea}&client_id=cb6b18c84b3b484d98018a791577af52&client_secret=3e3DB105Fbf642Bf88d5eeB8783EE1E6`);
             if (!response.ok) {
                 throw new Error(`Error de servidor: Código ${response.status}`);
-              }
+            }
             const data = await response.json();
             setTransportData(data);
         } catch (error) {
