@@ -146,14 +146,31 @@ img {
   height: 50vh;
 }
 
-#opcionesDropdown {
-  text-align: center;
-}
-
 .barratransporte {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   height: 27px;
+}
+
+.selector-localidad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.selector-localidad p {
+  line-height: 1.1;
+  margin: 1px;
+  font-size: smaller;
+}
+
+#opcionesDropdown {
+  text-align: left;
+  width: 170px;
 }

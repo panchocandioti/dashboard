@@ -14,7 +14,7 @@ function DashboardTransporte() {
     const [centerLat, setCenterLat] = useState((Math.max(...latitudes) + Math.min(...latitudes)) / 2);
     const [centerLng, setCenterLng] = useState((Math.max(...longitudes) + Math.min(...longitudes)) / 2);
     const [selectedData, setSelectedData] = useState(transportData.find(item => item.route_id === linea));
-    
+
     const datosDropDown1 = datosTransporte.map(item => item.route_id);
     const datosDropDown2 = datosDropDown1.sort((a, b) => a - b);
     const datosDropdown3 = [...new Set(datosDropDown2)];
@@ -35,6 +35,7 @@ function DashboardTransporte() {
             setTransportData(data);
         } catch (error) {
             console.error(error);
+            //alert("Falló la conexión con el servidor: API Colectivos AMBA");
         }
     };
 
@@ -77,7 +78,7 @@ function DashboardTransporte() {
             {cargando === true && (<div className="texto-con-movimiento">CARGANDO DATOS TRANSPORTE</div>)}
             {cargando === false && (<div>
                 <div className="barratransporte" style={{ backgroundColor: "#ccc", border: "2px solid #000" }}>
-                    <h4>COLECTIVOS DE LA CIUDAD AUTÓNOMA DE BUENOS AIRES</h4>
+                    <h4>COLECTIVOS DEL ÁREA METROPOLITANA DE BUENOS AIRES</h4>
                     <div>
                         <label htmlFor="opcionesDropdown">Selecciona una ruta (route_id): </label>
                         <select id="opcionesDropdown" value={linea} onChange={handleSelectChange}>
