@@ -19,7 +19,7 @@ function DashboardTiempo() {
     const [cargando, setCargando] = useState(true);
 
     const [provincia, setProvincia] = useState("Santa Fe");
-    const [municipio, setMunicipio] = useState("Candioti");
+    const [municipio, setMunicipio] = useState("CANDIOTI");
     const [lat, setLat] = useState(-31.3997);
     const [long, setLong] = useState(-60.7508)
     const [datosMunicipios, setDatosMunicipios] = useState([]);

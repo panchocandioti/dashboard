@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, useMap, Marker, Popup, useMapEvent, animateRef } from 'react-leaflet'
 import { datosTransporte } from "./DatosTransporte";
+import {  iconPerson  } from './Icon'
 
 function DashboardTransporte() {
 
@@ -36,6 +37,7 @@ function DashboardTransporte() {
         } catch (error) {
             console.error(error);
             //alert("Falló la conexión con el servidor: API Colectivos AMBA");
+            //el alert funciona OK pero prefiero desactivarlo porque aparece a cada rato. La API falla mucho.
         }
     };
 
@@ -99,7 +101,8 @@ function DashboardTransporte() {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     {transportData.map((item, index) => {
-                        return (<Marker key={item["id"] || index} position={[item["latitude"], item["longitude"]]}>
+                        return (<Marker key={item["id"] || index} position={[item["latitude"], item["longitude"]]} icon={ iconPerson }>
+                            
                             <Popup>
                                 <>Ruta: {[item["route_id"]]}</>
                                 <br></br>
